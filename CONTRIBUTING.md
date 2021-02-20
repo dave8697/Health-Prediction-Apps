@@ -3,7 +3,7 @@ This documentaion contains a set of guidelines to help you during the contributi
 
 ## Step 1: Find an issue :mag:
 - Take a look at the existing issues or create your own issues!
-- :hourglass_flowing_sand: Wait for the issu to be assigned to you after which you can start working on it.
+- :hourglass_flowing_sand: Wait for the issue to be assigned to you after which you can start working on it.
 ## Step 2: Fork the project:
 - Fork the repository from the parent repository
 - Clone the forked repository <br/>
@@ -16,4 +16,4 @@ This documentaion contains a set of guidelines to help you during the contributi
 - Push your changes<br/>
 ```git push -u origin```
 
-Voila! Your pull request has been set and will be reviewed by the project moderators soon. 
+Voila! Your pull request has been sent and will be reviewed by the project moderators soon. 
