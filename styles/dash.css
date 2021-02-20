@@ -1,0 +1,15 @@
+.navbar-dark{
+    background-color: #212121;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+body{
+    background-color: whitesmoke;
+}
+.card{
+    margin-top: 5vh;
+}
+.card-img-top {
+    height: 40vh;
+    object-fit: contain;
+    }
