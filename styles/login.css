@@ -1,17 +1,14 @@
 .navbar-dark{
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background-color: #212121;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 h2{
     text-align: center;
     font-size: x-large;
 }
 body{
-    background-attachment: fixed;
-    background-position: top ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-image: linear-gradient(black, transparent, black), url("https://he.utexas.edu/images/easyblog_articles/243/GettyImages-823767128_high.jpg");
+    background-color: whitesmoke;
 }
 .display-4{
     font-size: xx-large;
@@ -24,55 +21,31 @@ label{
 }
 #login{
     font-size: smaller;
-    color: white;
+    color: #212121;
     text-shadow: white;
-    float: left;
-    margin-top: 15vh;
-    margin-left: 15vh;
+    max-width: 250px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 20px 10px 20px;
-    border: 2px solid black;
-    border-radius: 25px;
-    box-shadow: black;
-    background-image: radial-gradient(transparent, black);
+    border: 1px solid #eaecef;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px #212121;
+    background-color: #f6f8fa;
 }
 #register{
     font-size: smaller;
-    color: white;
+    color: #212121;
     text-shadow: white;
-    float: right;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 20px 10px 20px;
-    border: 2px solid black;
-    border-radius: 25px;
-    box-shadow: black;
-    background-image: radial-gradient(transparent, black);
+    border: 1px solid #eaecef;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px #212121;
+    background-color: #f6f8fa;
 }
-#gender{
-    font-size: small;
-}
-#name{
-    font-size: small;
-}
-#dob{
-    font-size: small;
-}
-#contact{
-    font-size: small;
-}
-#Country{
-    font-size: small;
-}
-#email{
-    font-size: small;
-}
-#pass{
-    font-size: small;
-}
-#npass{
-    font-size: small;
-}
-#rtpass{
-    font-size: small;
-}
-#submit{
+#gender, #name, #dob, #contact, #Country, #email, #pass, #npass, #rtpass, #submit{
     font-size: small;
 }
