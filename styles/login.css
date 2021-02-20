@@ -1,0 +1,78 @@
+.navbar-dark{
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+h2{
+    text-align: center;
+    font-size: x-large;
+}
+body{
+    background-attachment: fixed;
+    background-position: top ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: linear-gradient(black, transparent, black), url("https://he.utexas.edu/images/easyblog_articles/243/GettyImages-823767128_high.jpg");
+}
+.display-4{
+    font-size: xx-large;
+}
+label{
+    margin-left: 5px;
+}
+#nav-exclude{
+    padding-top: 5vh;
+}
+#login{
+    font-size: smaller;
+    color: white;
+    text-shadow: white;
+    float: left;
+    margin-top: 15vh;
+    margin-left: 15vh;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: black;
+    background-image: radial-gradient(transparent, black);
+}
+#register{
+    font-size: smaller;
+    color: white;
+    text-shadow: white;
+    float: right;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: black;
+    background-image: radial-gradient(transparent, black);
+}
+#gender{
+    font-size: small;
+}
+#name{
+    font-size: small;
+}
+#dob{
+    font-size: small;
+}
+#contact{
+    font-size: small;
+}
+#Country{
+    font-size: small;
+}
+#email{
+    font-size: small;
+}
+#pass{
+    font-size: small;
+}
+#npass{
+    font-size: small;
+}
+#rtpass{
+    font-size: small;
+}
+#submit{
+    font-size: small;
+}
