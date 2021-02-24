@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="{% static 'web/css/bootstrap/bootstrap.min.css' %}">
+	{% block style %}{% endblock %}
+	<link rel="stylesheet" href="{% static 'web/css/font-awesome/css/font-awesome.min.css' %}">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<!-- Navbar brand -->
+					<a class="navbar-brand" href="{% url 'index' %}">Medicare</a>
+				</div>
+			</div>
+		</div>
+		<!-- Collapsible content -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="container ml-auto">
+				<div class="row">
+					<div class="col">
+						<ul class="navbar-nav text-nowrap">
+							<li class="navbar-item px-1">
+								<a href="{% url 'index' %}" class="nav-link active">
+									<span class="fa fa-home fa-lg"></span> Home
+								</a>
+							</li>
+							<li class="navbar-item px-1">
+								<a href="{% url 'login' %}" class="nav-link">
+									<span class="fa fa-sign-in fa-lg"></span> Login / Sign Up
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	{% block content %}
+	{% endblock %}
+    {% block scripts %}
+	<script src="{% static 'web/scripts/jquery/jquery.min.js' %}"></script>
+	<script src="{% static 'web/scripts/popper.js/popper.min.js' %}"></script>
+	<script src="{% static 'web/scripts/bootstrap/bootstrap.min.js' %}"></script>
+    {% endblock %}
+
+</body>
+
+</html>

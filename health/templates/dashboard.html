@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}<link rel="stylesheet" href="{% static 'web/css/dash.css' %}">{% endblock %}
+	{% block title %}Dashboard{% endblock %}
+{% block content %}
+	<div class="container" style="margin-top: 10vh;">
+		<div class="row">
+			<div class="col-12">
+				<div class="jumbotron">
+					<h3 class="display-4">General Apps</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3">
+				<div class="card">
+					<a href="#"><img class="card-img-top rounded-circle img-fluid"
+							src="https://static.vecteezy.com/system/resources/previews/000/952/526/non_2x/man-wearing-disposable-medical-face-mask-vector.jpg"
+							alt="image"></a>
+					<div class="card-body">
+						<p class="card-text text-center">Disease Symptoms Detection</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<div class="card">
+					<a href="{% url 'bmi:bmi' %}"><img class="card-img-top rounded-circle img-fluid"
+							src="https://images-eu.ssl-images-amazon.com/images/I/6197roqHYCL.png" alt="image"></a>
+					<div class="card-body">
+						<p class="card-text text-center">Basic Metabolic Rate Calculator</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="margin-top: 10vh; margin-bottom: 10vh;">
+		<div class="row">
+			<div class="col-12">
+				<div class="jumbotron">
+					<h3 class="display-4">Prediction Applications</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3">
+				<div class="card">
+					<a href="{% url 'heartApp:heartApp' %}"><img class="card-img-top img-fluid"
+							src="//i0.wp.com/post.healthline.com/wp-content/uploads/2020/07/Best_Apps_Heart_Disease_pulsepoint_400x400.png"
+							alt="image"></a>
+					<div class="card-body">
+						<p class="card-text text-center">Heart Disease Prediction</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<div class="card">
+					<a href="#"><img class="card-img-top img-fluid"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Blood_drop_plain.svg/1200px-Blood_drop_plain.svg.png"
+							alt="image"></a>
+					<div class="card-body">
+						<p class="card-text text-center">Diabetes Prediction</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<div class="card">
+					<a href="{% url 'breastCancer:breastCancer' %}"><img class="card-img-top img-fluid"
+							src="https://logoeps.com/wp-content/uploads/2013/04/national-breast-cancer-foundation-vector-logo.png"
+							alt="image"></a>
+					<div class="card-body">
+						<p class="card-text text-center">Breast Cancer</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-3">
+				<div class="card">
+					<a href="{% url 'liverApp:liverApp' %}"><img class="card-img-top img-fluid"
+							src="https://www.bcm.edu/sites/default/files/2020-11/liver.png" alt="image"></a>
+					<div class="card-body">
+						<p class="card-text text-center">Liver Disease</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
