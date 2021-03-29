@@ -1,0 +1,20 @@
+.navbar-dark{
+    background-color: #212121;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+body{
+    background-color: whitesmoke;
+}
+.display-4{
+    font-size: x-large;
+    padding-bottom: 15px;
+}
+table{
+    margin-top: 5vh;
+    text-align: center;
+}
+h3{
+    margin-top: 15vh;
+    text-align: center;
+}
