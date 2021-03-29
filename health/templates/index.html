@@ -7,7 +7,8 @@
 {% block content %} <div class="container-fluid mt-5 pt-5">
 	<div class="row">
 		<div class="col-12 col-md-6 order-last">
-			<form name="BMI" id="BMI" action="" method="post">
+			<form name="BMI" id="BMI" action="./bmi/health/result" method="post">
+				{% csrf_token %}
 				<h3 class="display-4 mb-4">Check Your BMI Here</h3>
 				<div class="form-row">
 					<div class="form-group col-12 col-md-6">
