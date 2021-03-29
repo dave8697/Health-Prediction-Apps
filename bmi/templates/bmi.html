@@ -7,7 +7,8 @@
     <div class="container" style="margin-top: 15vh;">
         <div class="form-row">
             <div class=" form-group col-12 col-md-6" style="margin-left: auto;margin-right: auto;">
-                <form name="BMI" id="BMI" action="" method="post">
+                <form name="BMI" id="BMI" action="./result" method="post">
+                    {% csrf_token %}
                     <h3 class="display-4 mb-4">Check Your BMI Here</h3>
                     <div class="form-row">
                         <div class="form-group col-12 col-md-6">
