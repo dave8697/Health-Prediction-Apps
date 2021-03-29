@@ -18,3 +18,32 @@ h3{
     margin-top: 15vh;
     text-align: center;
 }
+
+.circle-bg {
+    fill: none;
+    stroke: transparent;
+    stroke-width: 3.8;
+}
+  
+.circle {
+    fill:transparent;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 3s ease-out forwards;
+}
+  
+@keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+}
+  
+.circular-chart.white .circle {
+    stroke: blue;
+}
+.percentage {
+    fill:black;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
