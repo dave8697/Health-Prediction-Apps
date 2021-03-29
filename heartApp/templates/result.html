@@ -24,7 +24,7 @@
                             </th>
                         </tr>
                     </thead>
-                    {% if result > 0.6 %}
+                    {% if  result  > 60 %}
                     <tr class="table-danger">
                         <td>
                             {{ result }} %
@@ -33,7 +33,7 @@
                             Infected! Needs Medical Attention
                         </td>
                     </tr>
-                    {% elif result < 0.5 %}
+                    {% elif result < 50 %}
                     <tr class="table-success">
                         <td>
                             {{ result }}
