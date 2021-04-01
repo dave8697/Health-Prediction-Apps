@@ -24,11 +24,11 @@
         </div>
         <div class="col-12 col-sm-6">
             {% if bmi > 25 or bmi == 25 %}
-            <h3 style="color: #dc3545;">Overweight!</p>
-            {% elif bmi > 18.5 or bmi < 25 %}
-            <h3 style="color: #28a745;">Healthy!</p>
+            <h3 style="color: #dc3545;">Overweight!</h3>
+            {% elif bmi > 18.5 and bmi < 25 %}
+            <h3 style="color: #28a745;">Healthy!</h3>
             {% else %}
-            <h3 style="color: #ffc107;">Underweight!</p>
+            <h3 style="color: #ffc107;">Underweight!</h3>
             {% endif %}
         </div>
     </div>
