@@ -9,7 +9,8 @@
 <div class="container" style="margin-top: 10vh;">
     <div class="form-row">
         <div class=" form-group col-12 col-md-6" style="margin-left: auto;margin-right: auto;">
-            <form name="liver" id="liver" action="#" method="post">
+            <form name="liver" id="liver" action="./liver_result" method="post">
+                {% csrf_token %}
                 <h3 class="display-4 mb-3">Disease Estimation Form</h3>
                 <div class="form-row">
                     <div class="form-group col-12">
@@ -26,8 +27,8 @@
                         <label for="gender">Gender</label>
                         <select name="gender" id="gender" class="form-control">
                             <option class="d-none" value="" disabled selected>Select Gender</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
+                            <option value="0">Male</option>
+                            <option value="1">Female</option>
                         </select>
                     </div>
                 </div>
