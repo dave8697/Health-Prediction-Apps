@@ -8,11 +8,16 @@ def database():
 def login_check(request):
     if request.method == "POST":
         uid = request.POST.get('email')
-        passwd = request.POST.get('password')
-
-        ulist = userlist.objects.all()
-        print(ulist)
-    return render(request, 'dashboard.html', {})
+        passwd = request.POST.get('pass')
+        context = {}
+        ulist = userlist.objects.values('email', 'password', 'name')
+        for key in ulist:
+            if(key['email'] == uid and key['password'] == passwd):
+                context = key['name']
+                print(context)
+                return redirect('http://127.0.0.1:8000/dashboard', context)
+            else:
+                return redirect('http://127.0.0.1:8000/login')
 
 def newUser(request):
     if request.method == "POST":
