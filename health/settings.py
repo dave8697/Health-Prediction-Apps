@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'breastCancer',
     'liverApp',
     'bmi',
+    'database',
 ]
 
 MIDDLEWARE = [
@@ -64,6 +65,7 @@ TEMPLATES = [
             os.path.join(BASE_DIR, 'breastCancer'),
             os.path.join(BASE_DIR, 'liverApp'),
             os.path.join(BASE_DIR, 'bmi'),
+            os.path.join(BASE_DIR, 'database'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

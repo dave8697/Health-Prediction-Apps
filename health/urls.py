@@ -26,4 +26,5 @@ urlpatterns = [
     path('liverApp/', include('liverApp.urls', namespace = 'liverApp')),
     path('bmi/', include('bmi.urls', namespace = 'bmi')),
     path('dashboard/', views.dashboard, name = 'Dashboard'),
+    path('database/', include('database.urls', namespace = 'database')),
 ]

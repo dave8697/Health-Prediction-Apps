@@ -7,7 +7,8 @@
     <div class="container-fluid mt-5" id="nav-exclude">
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
-                <form id="login" name="login-form" action="#" method="post">
+                <form id="login" name="login-form" action="./database/health/login_check" method="post">
+                    {% csrf_token %}
                     <div class="form-row">
                         <div class="form-group col">
                             <h2>Login</h2>
@@ -37,7 +38,8 @@
                 </form>
             </div>
             <div class="col-12 col-md-6" style="border-left: 2px solid blue;">
-                <form id="register" name="register-form" action="#" method="post">
+                <form id="register" name="register-form" action="./database/login/new_user" method="post">
+                    {% csrf_token %}
                     <div class="form-row">
                         <div class="form-group col">
                             <h2 style="text-align: center;">Create An Account</h2>
