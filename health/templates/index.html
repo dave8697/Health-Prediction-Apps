@@ -4,9 +4,25 @@
 <link rel="stylesheet" href="{% static 'web/css/styles.css' %}">{% endblock %}
 {% block title %}Home{% endblock %}
 
-{% block content %} <div class="container-fluid mt-5 pt-5">
+{% block content %}
+<div class="container-fluid mt-5 pt-5">
 	<div class="row">
-		<div class="col-12 col-md-6 order-last">
+		<div class="container">
+			<div class="jumbotron">
+				<h1 class="display-4">Hello, world!</h1>
+				<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+					attention to featured content or information.</p>
+				<hr class="my-4">
+				<p>It uses utility classes for typography and spacing to space content out within the larger container.
+				</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row mt-2">
+		<div class="col-12 col-md-4 order-last">
 			<form name="BMI" id="BMI" action="./bmi/health/result" method="post">
 				{% csrf_token %}
 				<h3 class="display-4 mb-4">Check Your BMI Here</h3>
@@ -310,15 +326,17 @@
 				<input class="btn btn-success form-control mt-2" type="submit" id="submit" value="Compute">
 			</form>
 		</div>
-		<div class="col">
-			<p>This web application will provide you with the facility of detecting diseases with click of a button.
-				The modern approach to healthcare is to prevent the disease with early intervention rather than go for a
-				treatment after diagnosis. As healthcare generates large data, the challenge is to collect this data and
-				effectively use it for analysis, prediction, and treatment. With recent development in technologies such
-				as big data and machine learning, it's possible to get more accurate results for disease prediction.
-				Physicians are teaming up with statisticians and computer scientists to develop better tools to predict
-				the diseases.
-			</p>
+		<div class="col-12 col-md-8">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h1> Meet Our Developers</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

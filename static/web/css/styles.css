@@ -16,9 +16,6 @@ label{
     margin-left: 5px;
 }
 #BMI{
-    float: right;
-    margin-right: 50px;
-    max-width: 375px;
     box-shadow: 3px 3px 8px #888888;
     border-radius: 5px;
     background-color: #f5f5f5 ;
