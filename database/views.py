@@ -13,9 +13,9 @@ def login_check(request):
         ulist = userlist.objects.values('email', 'password', 'name')
         for key in ulist:
             if(key['email'] == uid and key['password'] == passwd):
-                context = key['name']
-                print(context)
-                return redirect('http://127.0.0.1:8000/dashboard', context)
+                request.session['name'] = key['name'].split(" ")[0]
+                print(request.session['name'])
+                return redirect('http://127.0.0.1:8000/dashboard')
             else:
                 return redirect('http://127.0.0.1:8000/login')
 

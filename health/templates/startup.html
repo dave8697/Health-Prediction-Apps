@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 		<!-- Navbar brand -->
 		<a class="navbar-brand pl-4" href="{% url 'index' %}">Medicare</a>
 		<!-- Collapsible content -->
@@ -30,7 +30,7 @@
 				</li>
 				<li class="navbar-item px-1">
 					<a href="{% url 'login' %}" class="nav-link">
-						<span class="fa fa-sign-out fa-lg"></span> Logout
+						<span class="fa fa-sign-in fa-lg"></span> Login/Signup
 					</a>
 				</li>
 			</ul>
@@ -46,11 +46,11 @@
 		</div>
 		<!-- Copyright -->
 	  </footer>
-	{% block scripts %}
+    {% block scripts %}
 	<script src="{% static 'web/scripts/jquery/jquery.min.js' %}"></script>
 	<script src="{% static 'web/scripts/popper.js/popper.min.js' %}"></script>
 	<script src="{% static 'web/scripts/bootstrap/bootstrap.min.js' %}"></script>
-	{% endblock %}
+    {% endblock %}
 
 </body>
 

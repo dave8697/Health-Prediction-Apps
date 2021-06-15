@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "startup.html" %}
 {% load static %}
     {% block style %}<link rel="stylesheet" href="{% static 'web/css/login.css' %}">{% endblock %}
     {% block title %}Login{% endblock %}
@@ -37,7 +37,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md-6" style="border-left: 2px solid blue;">
+            <div class="col-12 col-md-6 mb-4" style="border-left: 2px solid black;">
                 <form id="register" name="register-form" action="./database/login/new_user" method="post">
                     {% csrf_token %}
                     <div class="form-row">
