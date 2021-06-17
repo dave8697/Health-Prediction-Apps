@@ -10,14 +10,13 @@ def login_check(request):
         uid = request.POST.get('email')
         passwd = request.POST.get('pass')
         context = {}
-        ulist = userlist.objects.values('email', 'password', 'name')
-        for key in ulist:
-            if(key['email'] == uid and key['password'] == passwd):
+        ulist = userlist.objects.filter(email = uid, password = passwd).values()
+        if (len(ulist)==0):
+            return redirect('http://127.0.0.1:8000/login')
+        else:
+            for key in ulist:
                 request.session['name'] = key['name'].split(" ")[0]
-                print(request.session['name'])
-                return redirect('http://127.0.0.1:8000/dashboard')
-            else:
-                return redirect('http://127.0.0.1:8000/login')
+            return redirect('http://127.0.0.1:8000/dashboard')
 
 def newUser(request):
     if request.method == "POST":
@@ -30,7 +29,6 @@ def newUser(request):
         npass = request.POST.get('npass')
         ulist = userlist.objects.create(name = uname, gender = ugender, dob = udob, contact = ucontact, country = ucountry, email = uemail, password = npass)
         ulist.save()
-        context = {}
-        context = ulist.name
-        print(context)
-    return redirect('http://127.0.0.1:8000/dashboard', context)
+        request.session['name'] = ulist.name.split(" ")[0]
+        print(request.session['name'])
+    return redirect('http://127.0.0.1:8000/dashboard')
