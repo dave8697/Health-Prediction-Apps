@@ -9,23 +9,30 @@
 	<div class="row">
 		<div class="container">
 			<div class="jumbotron">
-				<h1 class="display-4">Hello, world!</h1>
-				<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-					attention to featured content or information.</p>
-				<hr class="my-4">
-				<p>It uses utility classes for typography and spacing to space content out within the larger container.
+				<h1 class="display-4" style="font-size: xxx-large;">One Place To Diagnose Yourself</h1>
+				<p class="lead mt-4">Hop in and get diagnosed. Know your condition with Easy To Use tools.
 				</p>
-				<p class="lead">
-					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+				<p class="mt-4">An AI based platform which analyzes all your inputs to understand your health issues and
+					provide you with insight. It will effectively reduce your interaction with doctors when not
+					absolutely necessary. Try Out.
+				</p>
+				<p class="lead mt-4 mb-0">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
 				</p>
 			</div>
 		</div>
 	</div>
-	<div class="row mt-2">
+	<div class="row">
 		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-4 order-last">
-					<form name="BMI" id="BMI" action="./bmi/health/result" method="post">
+			<div class="row mt-3">
+				<div class="col">
+					<h1 class="display-4" style="font-size: xx-large; text-align: center;">Know Your Body Mass Index</h1>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-12">
+					<form name="BMI" id="BMI" action="./bmi/health/result" method="post"
+						style="max-width: 400px; margin-right: auto;margin-left: auto;">
 						{% csrf_token %}
 						<h3 class="display-4 mb-4">Check Your BMI Here</h3>
 						<div class="form-row">
@@ -330,38 +337,81 @@
 						<input class="btn btn-success form-control mt-2" type="submit" id="submit" value="Compute">
 					</form>
 				</div>
-				<div class="col-12 col-md-8">
-					<div class="row">
-						<div class="col-12 text-center">
-							<h1> Meet Our Developers</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row mt-3">
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<h1> Meet Our Developers</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<div class="card" style="max-width: 18rem;background-color: transparent;border: none;">
+						<img src="/static/Images/dev_1.jpg" class="card-img-top mt-5 mb-2 rounded-circle" alt="..."
+							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
+						<div class="card-body">
+							<h5 class="card-title">Sanket Kumar Gupta</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col">
-							<div class="card mb-3 mt-5" style="max-width: 720px;">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img src="/static/Images/#" height="190px" alt="image">
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Dev Name</h5>
-											<p class="card-text">This is a wider card with supporting text below as a
-												natural lead-in to additional content. This content is a little bit
-												longer.</p>
-											<p class="card-text"><small class="text-muted">Last updated 3 mins
-													ago</small></p>
-										</div>
-									</div>
-								</div>
-							</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card" style="max-width: 18rem;background-color: transparent;border: none;">
+						<img src="/static/Images/dev_1.jpg" class="card-img-top mt-5 mb-2 rounded-circle" alt="..."
+							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
+						<div class="card-body">
+							<h5 class="card-title">Uzzam Pervez</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card" style="max-width: 18rem;background-color: transparent;border: none;">
+						<img src="/static/Images/dev_1.jpg" class="card-img-top mt-5 mb-2 rounded-circle" alt="..."
+							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
+						<div class="card-body">
+							<h5 class="card-title">Sanaa Yousuf</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
 						</div>
 					</div>
 				</div>
 			</div>
-
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<div class="card" style="max-width: 18rem;background-color: transparent;border: none;">
+						<img src="/static/Images/dev_1.jpg" class="card-img-top mt-5 mb-2 rounded-circle" alt="..."
+							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
+						<div class="card-body">
+							<h5 class="card-title">Vivek Patel</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card" style="max-width: 18rem;background-color: transparent;border: none;">
+						<img src="/static/Images/dev_1.jpg" class="card-img-top mt-5 mb-2 rounded-circle" alt="..."
+							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
+						<div class="card-body">
+							<h5 class="card-title">Mohiuddin Azad</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk
+								of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
 	</div>
 </div>
 <br>
