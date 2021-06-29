@@ -4,8 +4,6 @@ This repo is based on Machine Learning based apps hosted on django framework whi
 ## To run on your local machine
 
 - Download the code on your local machine
-- Install [Node.js](https://nodejs.org/en/ "Node.js homepage")
 - cd to the project
 - Install the dependencies and run<br/>
-```npm install```<br/>
-```npm start```
+```python manage.py runserver```<br/>
