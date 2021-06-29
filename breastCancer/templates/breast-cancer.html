@@ -8,7 +8,8 @@
     <div class="container" style="margin-top: 10vh;">
         <div class="form-row">
             <div class=" form-group col-12 col-md-6" style="margin-left: auto;margin-right: auto;">
-                <form name="breast-cancer" id="breast-cancer" action="#" method="post">
+                <form name="breast-cancer" id="breast-cancer" action="./breast_result" method="post">
+                    {% csrf_token %}
                     <h3 class="display-4 mb-3">Diagnosis Form</h3>
                     <div class="form-row">
                         <div class="form-group col-12">

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'web/css/result.css' %}">{% endblock %}
+{% block title %}Result{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3>Breast Cancer Diagnosis Result</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>
+                                Condition
+                            </th>
+                            <th>
+                                Accuracy
+                            </th>
+                        </tr>
+                    </thead>
+                    {% if  Condition == "Malignant" %}
+                    <tr class="table-danger">
+                        <td>
+                            {{ Condition }}
+                        </td>
+                        <td>
+                            {{ Probability }} %
+                        </td>
+                    </tr>  
+                    {% else %}
+                    <tr class="table-success">
+                        <td>
+                            {{ Condition }}
+                        </td>
+                        <td>
+                            {{ Probability }} %
+                        </td>
+                    </tr>
+                    {% endif %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
