@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'web/css/result.css' %}">{% endblock %}
+{% block title %}Result{% endblock %}
+{% block content %}
+<style>
+    footer{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3>Diagnosis Result</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive">
+                <table class="table table-bordered" style="max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>
+                                Disease
+                            </th>
+                        </tr>
+                    </thead>
+                    <tr class="table-info">
+                        <td>
+                            {{ diagnosis }}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

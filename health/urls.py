@@ -27,4 +27,5 @@ urlpatterns = [
     path('bmi/', include('bmi.urls', namespace = 'bmi')),
     path('dashboard/', views.dashboard, name = 'Dashboard'),
     path('database/', include('database.urls', namespace = 'database')),
+    path('diseasePrediction/', include('diseasePrediction.urls', namespace = 'diseasePrediction')),
 ]

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'liverApp',
     'bmi',
     'database',
+    'diseasePrediction',
 ]
 
 MIDDLEWARE = [
