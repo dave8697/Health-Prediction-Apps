@@ -28,4 +28,5 @@ urlpatterns = [
     path('dashboard/', views.dashboard, name = 'Dashboard'),
     path('database/', include('database.urls', namespace = 'database')),
     path('diseasePrediction/', include('diseasePrediction.urls', namespace = 'diseasePrediction')),
+    path('diabetesApp/', include('diabetesApp.urls', namespace = 'diabetesApp')),
 ]

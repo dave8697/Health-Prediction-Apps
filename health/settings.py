@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'bmi',
     'database',
     'diseasePrediction',
+    'diabetesApp',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +68,8 @@ TEMPLATES = [
             os.path.join(BASE_DIR, 'liverApp'),
             os.path.join(BASE_DIR, 'bmi'),
             os.path.join(BASE_DIR, 'database'),
+            os.path.join(BASE_DIR, 'diseasePrediction'),
+            os.path.join(BASE_DIR, 'diabetesApp'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

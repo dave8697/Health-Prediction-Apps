@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'web/css/result.css' %}">{% endblock %}
+{% block title %}Result{% endblock %}
+{% block content %}
+<style>
+    footer{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3>Diabetes Diagnosis Result</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>
+                                Diagnosis
+                            </th>
+                        </tr>
+                    </thead>
+                    {% if  result  > 60 %}
+                    <tr class="table-danger">
+                        <td>
+                            Diabetic
+                        </td>
+                    </tr>
+                    {% elif result < 50 %}
+                    <tr class="table-success">
+                        <td>
+                            Not Diabetic
+                        </td>
+                    </tr>   
+                    {% else %}
+                    <tr class="table-info">
+                        <td>
+                            Maybe Diabetic. In depth Examination Required.
+                        </td>
+                    </tr>
+                    {% endif %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
