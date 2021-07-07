@@ -1,3 +1,13 @@
+body{
+    background-image: url('/static/Images/login.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 700px) {
+    body{
+        background-image: none;
+    }
+}
 .navbar-dark{
     background-color: #212121;
     position: relative;

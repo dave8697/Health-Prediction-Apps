@@ -5,34 +5,34 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="container-fluid mt-5 pt-5">
-	<div class="row">
+<div class="container-fluid pt-5">
+	<div class="row" id="row1">
 		<div class="container">
-			<div class="jumbotron">
+			<div class="jumbotron" style="background: linear-gradient(to left, rgba(0,0,0,0.2), mistyrose), url('/static/Images/oneplace.png'); background-size: cover;">
 				<h1 class="display-4" style="font-size: xxx-large;">One Place To Diagnose Yourself</h1>
 				<p class="lead mt-4">Hop in and get diagnosed. Know your condition with Easy To Use tools.
 				</p>
 				<p class="mt-4">An AI based platform which analyzes all your inputs to understand your health issues and
-					provide you with insight. It will effectively reduce your interaction with doctors when not
-					absolutely necessary. Try Out.
+					provide you with insight. <br> It will effectively reduce your interaction with doctors when not
+					absolutely necessary. <br><br> Try Out.
 				</p>
 				<p class="lead mt-4 mb-0">
-					<a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+					<a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Get Started</a>
 				</p>
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row" id="row2">
 		<div class="container">
 			<div class="row mt-3">
 				<div class="col">
-					<h1 class="display-4" style="font-size: xx-large; text-align: center;">Know Your Body Mass Index</h1>
+					<h1 class="display-4" style="font-size: xx-large; text-align: center;">Your Body Mass Index</h1>
 				</div>
 			</div>
 			<div class="row mt-4">
 				<div class="col-12">
 					<form name="BMI" id="BMI" action="./bmi/health/result" method="post"
-						style="max-width: 400px; margin-right: auto;margin-left: auto;">
+						style="max-width: 400px; margin-left: 0%; margin-bottom: 40px;">
 						{% csrf_token %}
 						<h3 class="display-4 mb-4">Check Your BMI Here</h3>
 						<div class="form-row">
@@ -340,7 +340,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row mt-3">
+	<div class="row" id="row3">
 		<div class="container">
 			<div class="row mt-5">
 				<div class="col-12 text-center">
@@ -354,9 +354,9 @@
 							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
 						<div class="card-body">
 							<h5 class="card-title">Sanket Kumar Gupta</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<em><p class="card-text">"Programming is a skill best acquired by practise and example rather than from books"</p></em>
+							<br>
+							<a href="https://www.linkedin.com/in/sanket-gupta-171862171/" class="btn btn-primary">Visit Profile</a>
 						</div>
 					</div>
 				</div>
@@ -366,21 +366,21 @@
 							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
 						<div class="card-body">
 							<h5 class="card-title">Uzzam Pervez</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<em><p class="card-text">"Technology is like Art, A soaring exercise of the human imagination"</p></em>
+							<br>
+							<a href="https://www.linkedin.com/in/uzzam-pervez-9067561a0/" class="btn btn-primary">Visit Profile</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-md-4">
 					<div class="card" style="max-width: 18rem;background-color: transparent;border: none;">
-						<img src="/static/Images/dev_1.jpg" class="card-img-top mt-5 mb-2 rounded-circle" alt="..."
+						<img src="/static/Images/dev_3.jpg" class="card-img-top mt-5 mb-2 rounded-circle" alt="..."
 							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
 						<div class="card-body">
 							<h5 class="card-title">Sanaa Yousuf</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<em><p class="card-text">"Programming isn't about what you know, it's about what you can figure out"</p></em>
+							<br>
+							<a href="https://www.linkedin.com/in/sanaa-yousuf-41084a190/" class="btn btn-primary">Visit Profile</a>
 						</div>
 					</div>
 				</div>
@@ -388,13 +388,13 @@
 			<div class="row">
 				<div class="col-12 col-md-4">
 					<div class="card" style="max-width: 18rem;background-color: transparent;border: none;">
-						<img src="/static/Images/dev_1.jpg" class="card-img-top mt-5 mb-2 rounded-circle" alt="..."
+						<img src="/static/Images/dev_4.jpeg" class="card-img-top mt-5 mb-2 rounded-circle" alt="..."
 							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
 						<div class="card-body">
 							<h5 class="card-title">Vivek Patel</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<em><p class="card-text">"There are 10 types of people in the world, Those who understand binary and those who don't"</p></em>
+							<br>
+							<a href="https://www.linkedin.com/in/vivek-patel-045067186" class="btn btn-primary">Visit Profile</a>
 						</div>
 					</div>
 				</div>
@@ -404,9 +404,9 @@
 							style="max-height: 10em; max-width: 10em; margin-left: auto;margin-right: auto;">
 						<div class="card-body">
 							<h5 class="card-title">Mohiuddin Azad</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<em><p class="card-text">"Machine Learning will automate jobs that most people thought could only be done by people"</p></em>
+							<br>
+							<a href="https://www.linkedin.com/in/mohiuddin-azad-994913202/" class="btn btn-primary">Visit Profile</a>
 						</div>
 					</div>
 				</div>
@@ -414,13 +414,4 @@
 		</div>
 	</div>
 </div>
-<br>
-<br>
-<p>Included here is the implementation of web application through feature driven development.
-	Each activity of feature driven development is discussed with artifacts produced during that activity.
-	The web application has been developed using Django framework of python.
-	In this application we have used machine learning (ML) algorithms to predict risk factors for a person’s heart
-	disease, depending on several characteristics of the medical history. Use input features such as gender,
-	cholesterol, blood pressure, TTH, and stress to predict the patient’s risk of heart disease.
-</p>
 {% endblock %}
