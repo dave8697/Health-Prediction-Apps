@@ -17,3 +17,7 @@ def dashboard(request):
     else:
         request.session['logged'] = 0
         return render(request, 'dashboard.html', {})
+
+def logout(request):
+    request.session.flush()
+    return render(request, 'index.html')
