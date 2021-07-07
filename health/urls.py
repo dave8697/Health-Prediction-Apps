@@ -22,6 +22,7 @@ urlpatterns = [
     path('heartApp/', include('heartApp.urls', namespace = 'heartApp')),
     path('', views.index, name = 'index'),
     path('login', views.login, name = 'login'),
+    path('signup', views.signup, name = 'signup'),
     path('breastCancer/', include('breastCancer.urls', namespace = 'breastCancer')),
     path('liverApp/', include('liverApp.urls', namespace = 'liverApp')),
     path('bmi/', include('bmi.urls', namespace = 'bmi')),

@@ -31,6 +31,6 @@ def newUser(request):
         ulist = userlist.objects.create(name = uname, gender = ugender, dob = udob, contact = ucontact, country = ucountry, email = uemail, password = npass)
         ulist.save()
         request.session['name'] = ulist.name.split(" ")[0]
-        request.session['logged_in'] = 1
+        request.session['logged'] = 1
         print(request.session['name'])
     return redirect('http://127.0.0.1:8000/dashboard')

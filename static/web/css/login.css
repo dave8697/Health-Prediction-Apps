@@ -1,14 +1,11 @@
 .navbar-dark{
     background-color: #212121;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    position: relative;
 }
 h2{
     text-align: center;
     font-size: x-large;
-}
-body{
-    background-color: whitesmoke;
+    font-weight: bold;
 }
 .display-4{
     font-size: xx-large;
@@ -20,31 +17,35 @@ label{
     padding-top: 5vh;
 }
 #login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 2vh;
+    transform: translate(-50%);
     font-size: smaller;
-    color: #212121;
-    text-shadow: white;
+    color: whitesmoke;
+    text-shadow: whitesmoke;
     max-width: 250px;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px 20px 10px 20px;
-    border: 1px solid #eaecef;
+    border: 1px solid #212121;
     border-radius: 5px;
     box-shadow: 2px 2px 8px #212121;
-    background-color: #f6f8fa;
+    background-color: #212121;
 }
 #register{
     font-size: smaller;
-    color: #212121;
+    color: whitesmoke;
     text-shadow: white;
     max-width: 375px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5vh;
     padding: 10px 20px 10px 20px;
-    border: 1px solid #eaecef;
+    border: 1px solid #212121;
     border-radius: 5px;
     box-shadow: 2px 2px 8px #212121;
-    background-color: #f6f8fa;
+    background-color: #212121;
 }
 #gender, #name, #dob, #contact, #Country, #email, #pass, #npass, #rtpass, #submit{
     font-size: small;
