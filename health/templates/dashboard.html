@@ -4,7 +4,7 @@
 	{% block title %}Dashboard{% endblock %}
 {% block content %}
 {% if request.session.logged == 0 %}
-<meta http-equiv="refresh" content=" 0; url = http://127.0.0.1:8000/login">
+<meta http-equiv="refresh" content=" 0; url = /login">
 {% else %}
 	<div class="container" style="margin-top: 10vh;">
 		<div class="row">
