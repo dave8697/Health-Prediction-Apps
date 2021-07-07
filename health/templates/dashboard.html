@@ -3,6 +3,9 @@
 {% block style %}<link rel="stylesheet" href="{% static 'web/css/dash.css' %}">{% endblock %}
 	{% block title %}Dashboard{% endblock %}
 {% block content %}
+{% if request.session.logged == 0 %}
+<meta http-equiv="refresh" content=" 0; url = http://127.0.0.1:8000/login">
+{% else %}
 	<div class="container" style="margin-top: 10vh;">
 		<div class="row">
 			<div class="col-12 pt-5 pb-5">
@@ -90,4 +93,5 @@
 			</div>
 		</div>
 	</div>
+{% endif %}
 {% endblock %}

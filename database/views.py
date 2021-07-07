@@ -16,6 +16,7 @@ def login_check(request):
         else:
             for key in ulist:
                 request.session['name'] = key['name'].split(" ")[0]
+                request.session['logged'] = 1
             return redirect('http://127.0.0.1:8000/dashboard')
 
 def newUser(request):
@@ -30,5 +31,6 @@ def newUser(request):
         ulist = userlist.objects.create(name = uname, gender = ugender, dob = udob, contact = ucontact, country = ucountry, email = uemail, password = npass)
         ulist.save()
         request.session['name'] = ulist.name.split(" ")[0]
+        request.session['logged_in'] = 1
         print(request.session['name'])
     return redirect('http://127.0.0.1:8000/dashboard')
