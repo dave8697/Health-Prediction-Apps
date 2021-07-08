@@ -14,191 +14,191 @@
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label for="name">Name</label>
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name">
+                            <input required class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="Age">Age</label>
-                            <input class="form-control" type="text" name="age" id="age" placeholder="Age">
+                            <input required class="form-control" type="text" name="age" id="age" placeholder="Age" onkeypress="return onlyAge(event)" maxlength="3">
                         </div>
                         <div class="form-group col-6">
                             <label for="radius_mean">Mean Radius</label>
-                            <input class="form-control" type="text" name="radius_mean" id="radius_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="radius_mean" id="radius_mean"
                                 placeholder="Mean Radius">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="texture_mean">Mean Texture</label>
-                            <input class="form-control" type="text" name="texture_mean" id="texture_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="texture_mean" id="texture_mean"
                                 placeholder="Mean Texture">
                         </div>
                         <div class="form-group col-6">
                             <label for="perimeter_mean">Mean Perimeter</label>
-                            <input class="form-control" type="text" name="perimeter_mean" id="perimeter_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="perimeter_mean" id="perimeter_mean"
                                 placeholder="Mean Perimeter">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label for="area_mean">Mean Area</label>
-                            <input class="form-control" type="text" name="area_mean" id="area_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="area_mean" id="area_mean"
                                 placeholder="Mean Area">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="smoothness_mean">Mean Smoothness</label>
-                            <input class="form-control" type="text" name="smoothness_mean" id="smoothness_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="smoothness_mean" id="smoothness_mean"
                                 placeholder="Mean Smoothness">
                         </div>
                         <div class="form-group col-6">
                             <label for="compactness_mean">Mean Compactness</label>
-                            <input class="form-control" type="text" name="compactness_mean" id="compactness_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="compactness_mean" id="compactness_mean"
                                 placeholder="Mean Compactness">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="concavity_mean">Mean Concavity</label>
-                            <input class="form-control" type="text" name="concavity_mean" id="concavity_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="concavity_mean" id="concavity_mean"
                                 placeholder="Mean Concavity">
                         </div>
                         <div class="form-group col-6">
                             <label for="concave_points_mean">Mean Concave Points</label>
-                            <input class="form-control" type="text" name="concave_points_mean" id="concave_points_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="concave_points_mean" id="concave_points_mean"
                                 placeholder="Mean Concave Points">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="symmetry_mean">Mean Symmetry</label>
-                            <input class="form-control" type="text" name="symmetry_mean" id="symmetry_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="symmetry_mean" id="symmetry_mean"
                                 placeholder="Mean Symmetry">
                         </div>
                         <div class="form-group col-6">
                             <label for="fractal_dimension_mean">Mean Fractal Dimension</label>
-                            <input class="form-control" type="text" name="fractal_dimension_mean"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="fractal_dimension_mean"
                                 id="fractal_dimension_mean" placeholder="Mean Fractal Dimension">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="radius_se">Radius Se</label>
-                            <input class="form-control" type="text" name="radius_se" id="radius_se"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="radius_se" id="radius_se"
                                 placeholder="Radius Se">
                         </div>
                         <div class="form-group col-6">
                             <label for="texture_se">Texture Se</label>
-                            <input class="form-control" type="text" name="texture_se" id="texture_se"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="texture_se" id="texture_se"
                                 placeholder="Texture Se">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="perimeter_se">Perimeter Se</label>
-                            <input class="form-control" type="text" name="perimeter_se" id="perimeter_se"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="perimeter_se" id="perimeter_se"
                                 placeholder="Perimeter Se">
                         </div>
                         <div class="form-group col-6">
                             <label for="area_se">Area Se</label>
-                            <input class="form-control" type="text" name="area_se" id="area_se" placeholder="Area Se">
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="area_se" id="area_se" placeholder="Area Se">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="smoothness_se">Smoothness Se</label>
-                            <input class="form-control" type="text" name="smoothness_se" id="smoothness_se"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="smoothness_se" id="smoothness_se"
                                 placeholder="Smoothness Se">
                         </div>
                         <div class="form-group col-6">
                             <label for="compactness_se">Compactness Se</label>
-                            <input class="form-control" type="text" name="compactness_se" id="compactness_se"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="compactness_se" id="compactness_se"
                                 placeholder="Compactness Se">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="concavity_se">Concavity Se</label>
-                            <input class="form-control" type="text" name="concavity_se" id="concavity_se"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="concavity_se" id="concavity_se"
                                 placeholder="Concavity Se">
                         </div>
                         <div class="form-group col-6">
                             <label for="concave_points_se">Concave Points Se</label>
-                            <input class="form-control" type="text" name="concave_points_se" id="concave_points_se"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="concave_points_se" id="concave_points_se"
                                 placeholder="Concave Points Se">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="symmetry_se">Symmetry Se</label>
-                            <input class="form-control" type="text" name="symmetry_se" id="symmetry_se"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="symmetry_se" id="symmetry_se"
                                 placeholder="Symmetry Se">
                         </div>
                         <div class="form-group col-6">
                             <label for="fractal_dimension_se">Fractal Dimension Se</label>
-                            <input class="form-control" type="text" name="fractal_dimension_se"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="fractal_dimension_se"
                                 id="fractal_dimension_se" placeholder="Fractal Dimension Se">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="radius_worst">Worst Radius</label>
-                            <input class="form-control" type="text" name="radius_worst" id="radius_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="radius_worst" id="radius_worst"
                                 placeholder="Worst Radius">
                         </div>
                         <div class="form-group col-6">
                             <label for="texture_worst">Worst Texture</label>
-                            <input class="form-control" type="text" name="texture_worst" id="texture_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="texture_worst" id="texture_worst"
                                 placeholder="Worst Texture">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="perimeter_worst">Worst Perimeter</label>
-                            <input class="form-control" type="text" name="perimeter_worst" id="perimeter_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="perimeter_worst" id="perimeter_worst"
                                 placeholder="Worst Perimeter">
                         </div>
                         <div class="form-group col-6">
                             <label for="area_worst">Worst Area</label>
-                            <input class="form-control" type="text" name="area_worst" id="area_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="area_worst" id="area_worst"
                                 placeholder="Worst Area">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="smoothness_worst">Worst Smoothness</label>
-                            <input class="form-control" type="text" name="smoothness_worst" id="smoothness_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="smoothness_worst" id="smoothness_worst"
                                 placeholder="Worst Smoothness">
                         </div>
                         <div class="form-group col-6">
                             <label for="compactness_worst">Worst Compactness</label>
-                            <input class="form-control" type="text" name="compactness_worst" id="compactness_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="compactness_worst" id="compactness_worst"
                                 placeholder="Worst Compactness">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="concavity_worst">Worst Concavity</label>
-                            <input class="form-control" type="text" name="concavity_worst" id="concavity_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="concavity_worst" id="concavity_worst"
                                 placeholder="Worst Concavity">
                         </div>
                         <div class="form-group col-6">
                             <label for="concave_points_worst">Worst Concave Points</label>
-                            <input class="form-control" type="text" name="concave_points_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="concave_points_worst"
                                 id="concave_points_worst" placeholder="Worst Concave Points">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="symmetry_worst">Worst Symmetry</label>
-                            <input class="form-control" type="text" name="symmetry_worst" id="symmetry_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="symmetry_worst" id="symmetry_worst"
                                 placeholder="Worst Symmetry">
                         </div>
                         <div class="form-group col-6">
                             <label for="fractal_dimension_worst">Worst Fractal Dimension</label>
-                            <input class="form-control" type="text" name="fractal_dimension_worst"
+                            <input onkeypress="return onlyNumber(event)" required class="form-control" type="text" name="fractal_dimension_worst"
                                 id="fractal_dimension_worst" placeholder="Worst Fractal Dimension">
                         </div>
                     </div>
@@ -208,6 +208,7 @@
                         </div>
                     </div>
                 </form>
+                <script src="/static/web/scripts/app.js"></script>
             </div>
         </div>
     </div>
