@@ -10,7 +10,7 @@ body{
     font-size: x-large;
     padding-bottom: 15px;
 }
-#liver, #breast-cancer, #heart, #BMI{
+#liver, #breast-cancer, #heart, #BMI, #diabetes, #disease{
     font-size: small;
     box-shadow: 3px 3px 8px #888888;
     border-radius: 5px;
