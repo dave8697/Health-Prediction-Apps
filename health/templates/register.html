@@ -6,10 +6,7 @@
 {% block content %}
 <style>
     footer{
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        right: 0%;
+        visibility: hidden;
     }
 </style>
 <div class="container" id="nav-exclude">
@@ -27,13 +24,13 @@
                         <label for="name">Full Name</label>
                         <input class="form-control" type="text" name="name" id="name"
                             placeholder="Enter your full name" onfocus="this.placeholder=''"
-                            onblur="this.placeholder='Enter your full name'">
+                            onblur="this.placeholder='Enter your full name'" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col">
                         <label for="gender">Gender</label>
-                        <select class="form-control" name="gender" id="gender">
+                        <select class="form-control" name="gender" id="gender" required>
                             <option class="d-none" value="" disabled selected>Select your gender</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -41,7 +38,7 @@
                     </div>
                     <div class="form-group col">
                         <label for="dob">Date Of Birth</label>
-                        <input class="form-control col-sm" type="date" name="dob" id="dob">
+                        <input class="form-control col-sm" type="date" name="dob" id="dob" required>
                     </div>
                 </div>
                 <div class="form-row">
@@ -49,11 +46,11 @@
                         <label for="contact">Phone Number</label>
                         <input class="form-control mr-4" type="text" name="contact" id="contact"
                             placeholder="Enter your phone number" onfocus="this.placeholder=''"
-                            onblur="this.placeholder='Enter your phone number'">
+                            onblur="this.placeholder='Enter your phone number'" required>
                     </div>
                     <div class="form-group col">
                         <label for="dob">Select Country</label>
-                        <select class="form-control" id="Country" name="Country">
+                        <select class="form-control" id="Country" name="Country" required>
                             <option class="d-none" value="" disabled selected>Select Country</option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -309,7 +306,7 @@
                         <label for="email">Email</label>
                         <input class="form-control mr-4" type="text" name="email" id="email"
                             placeholder="Enter your email here" onfocus="this.placeholder=''"
-                            onblur="this.placeholder='Enter your email here'">
+                            onblur="this.placeholder='Enter your email here'" required>
                     </div>
                 </div>
                 <div class="form-row">
@@ -317,13 +314,13 @@
                         <label for="npass">Create New Password</label>
                         <input class="form-control mr-4" type="password" name="npass" id="npass"
                             placeholder="New Password" onfocus="this.placeholder=''"
-                            onblur="this.placeholder='New Password'">
+                            onblur="this.placeholder='New Password'" required>
                     </div>
                     <div class="form-group col">
                         <label for="rtpass">Re-Enter Password</label>
                         <input class="form-control mr-4" type="password" name="rtpass" id="rtpass"
                             placeholder="Re-Enter Password" onfocus="this.placeholder=''"
-                            onblur="this.placeholder='Re-Enter Password'">
+                            onblur="this.placeholder='Re-Enter Password'" required>
                     </div>
                 </div>
                 <div class="form-row">
