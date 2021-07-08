@@ -4,7 +4,7 @@ document.forms[0].onsubmit=function()
     var letters = /^[A-Za-z\s]+$/;
     if(!fname.match(letters))
     {
-        alert("\nInvalid Name: Please enter a valid First name"+fname);
+        alert("\nInvalid Name: Please enter a valid First name");
         return false;
     }
 
