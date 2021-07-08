@@ -15,17 +15,17 @@
                 <div class="form-row">
                     <div class="form-group col-12">
                         <label for="name">Name</label>
-                        <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name">
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-6">
                         <label for="Age">Age</label>
-                        <input class="form-control" type="number" name="age" id="age" placeholder="Age">
+                        <input class="form-control" type="text" name="age" id="age" placeholder="Age" onkeypress="return onlyAge(event)" maxlength="3" required>
                     </div>
                     <div class="form-group col-6">
                         <label for="gender">Gender</label>
-                        <select name="gender" id="gender" class="form-control">
+                        <select name="gender" id="gender" class="form-control" required>
                             <option class="d-none" value="" disabled selected>Select Gender</option>
                             <option value="0">Male</option>
                             <option value="1">Female</option>
@@ -36,52 +36,52 @@
                     <div class="form-group col-12 col-sm-6">
                         <label for="t_bilirubin">Total Bilirubin</label>
                         <input class="form-control" type="text" name="t_bilirubin" id="t_bilirubin"
-                            placeholder="Total Bilirubin Count">
+                            placeholder="Total Bilirubin Count" onkeypress="return onlyNumber(event)" required>
                     </div>
                     <div class="form-group col-12 col-sm-6">
                         <label for="d_bilirubin">Direct Bilirubin</label>
                         <input class="form-control" type="text" name="d_bilirubin" id="d_bilirubin"
-                            placeholder="Direct Bilirubin Count">
+                            placeholder="Direct Bilirubin Count" onkeypress="return onlyNumber(event)" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-12">
                         <label for="a_phosphotase">Alkaline Phosphotase</label>
                         <input class="form-control" type="text" name="a_phosphotase" id="a_phosphotase"
-                            placeholder="Alkaline Phosphotase Count">
+                            placeholder="Alkaline Phosphotase Count" onkeypress="return onlyNumber(event)" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-12 col-sm-6">
                         <label for="a_aminotransferase">Alamine Amino-Transferase</label>
                         <input class="form-control" type="text" name="a_aminotransferase" id="a_aminotransferase"
-                            placeholder="Amino-Transferase Count">
+                            placeholder="Amino-Transferase Count" onkeypress="return onlyNumber(event)" required>
                     </div>
                     <div class="form-group col-12 col-sm-6">
                         <label for="as_aminotransferase">Aspartate Amino-Transferase</label>
                         <input class="form-control" type="text" name="as_aminotransferase" id="as_aminotransferase"
-                            placeholder="Aspartate Amino-Transferase Count">
+                            placeholder="Aspartate Amino-Transferase Count" onkeypress="return onlyNumber(event)" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-12">
                         <label for="t_proteins">Total Proteins</label>
                         <input class="form-control" type="text" name="t_proteins" id="t_proteins"
-                            placeholder="Total Protein Count">
+                            placeholder="Total Protein Count" onkeypress="return onlyNumber(event)" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-12">
                         <label for="albumin">Albumin Count</label>
                         <input class="form-control" type="text" name="albumin" id="albumin"
-                            placeholder="Total Albumin Count">
+                            placeholder="Total Albumin Count" onkeypress="return onlyNumber(event)" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-12">
                         <label for="a-g-ratio">Albumin And Globulin Ratio</label>
                         <input class="form-control" type="text" name="a-g-ratio" id="a-g-ratio"
-                            placeholder="Albumin And Globulin Ratio">
+                            placeholder="Albumin And Globulin Ratio" onkeypress="return onlyNumber(event)" required>
                     </div>
                 </div>
                 <div class="form-row">
@@ -90,6 +90,7 @@
                     </div>
                 </div>
             </form>
+            <script src="/static/web/scripts/app.js"></script>
         </div>
     </div>
 </div>

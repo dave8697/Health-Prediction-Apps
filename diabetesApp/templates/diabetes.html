@@ -13,17 +13,17 @@
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label for="name">Name</label>
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name">
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="age">Age</label>
-                            <input class="form-control" type="text" name="age" id="age" placeholder="Age In Years">
+                            <input class="form-control" type="text" name="age" id="age" placeholder="Age In Years" onkeypress="return onlyAge(event)" maxlength="3" required>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="sex">Gender</label>
-                            <select class="form-control" name="sex" id="sex">
+                            <select class="form-control" name="sex" id="sex" required>
                                 <option class="d-none" value="" selected disabled>Select Your Gender</option>
                                 <option value="1">Male</option>
                                 <option value="0">Female</option>
@@ -33,31 +33,31 @@
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="Pregnancies">Pregnancies</label>
-                            <input class="form-control" type="text" name="Pregnancies" id="Pregnancies" placeholder="No. of Pregnancies">
+                            <input class="form-control" type="text" name="Pregnancies" id="Pregnancies" placeholder="No. of Pregnancies" onkeypress="return onlyNumber(event)" required>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="Glucose">Glucose Level</label>
-                            <input class="form-control" type="text" name="Glucose" id="Glucose" placeholder="Glucose Level">
+                            <input class="form-control" type="text" name="Glucose" id="Glucose" placeholder="Glucose Level" onkeypress="return onlyNumber(event)" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="BloodPressure">BloodPressure</label>
-                            <input class="form-control" type="text" name="BloodPressure" id="BloodPressure" placeholder="Low Bar Of Blood Pressure">
+                            <input class="form-control" type="text" name="BloodPressure" id="BloodPressure" placeholder="Low Bar Of Blood Pressure" onkeypress="return onlyNumber(event)" required>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="SkinThickness">SkinThickness</label>
-                            <input class="form-control" type="text" name="SkinThickness" id="SkinThickness" placeholder="Thickness Of Skin">
+                            <input class="form-control" type="text" name="SkinThickness" id="SkinThickness" placeholder="Thickness Of Skin" onkeypress="return onlyNumber(event)" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="Insulin">Insulin</label>
-                            <input class="form-control" type="text" name="Insulin" id="Insulin" placeholder="Insulin Level">
+                            <input class="form-control" type="text" name="Insulin" id="Insulin" placeholder="Insulin Level" onkeypress="return onlyNumber(event)" required>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="BMI">BMI</label>
-                            <input class="form-control" type="text" name="BMI" id="BMI_input" placeholder="Body Mass Index">
+                            <input class="form-control" type="text" name="BMI" id="BMI_input" placeholder="Body Mass Index" onkeypress="return onlyNumber(event)" required>
                         </div>
                     </div>
                     <div class="form-row">
@@ -66,6 +66,7 @@
                         </div>
                     </div>
                 </form>
+                <script src="/static/web/scripts/app.js"></script>
             </div>
         </div>
     </div>

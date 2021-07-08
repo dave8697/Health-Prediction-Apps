@@ -13,17 +13,17 @@
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label for="name">Name</label>
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name">
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="age">Age</label>
-                            <input class="form-control" type="text" name="age" id="age" placeholder="Age In Years">
+                            <input class="form-control" type="text" name="age" id="age" placeholder="Age In Years" onkeypress="return onlyAge(event)" maxlength="3" required>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="sex">Gender</label>
-                            <select class="form-control" name="sex" id="sex">
+                            <select class="form-control" name="sex" id="sex" required>
                                 <option class="d-none" value="" selected disabled>Select Your Gender</option>
                                 <option value="1">Male</option>
                                 <option value="0">Female</option>
@@ -33,7 +33,7 @@
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="cp">Chest Pain Type</label>
-                            <select class="form-control" name="cp" id="cp">
+                            <select class="form-control" name="cp" id="cp" required>
                                 <option class="d-none" value="" selected disabled>Select Pain Type</option>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -43,53 +43,53 @@
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="trestbps">Resting Blood Pressure</label>
-                            <input class="form-control" type="text" name="trestbps" id="trestbps" placeholder="Resting Blood Pressure">
+                            <input class="form-control" type="text" name="trestbps" id="trestbps" placeholder="Resting Blood Pressure" onkeypress="return onlyNumber(event)" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="chol">Serum Cholestrol In mg/dl</label>
-                            <input class="form-control" type="text" name="chol" id="chol" placeholder="Serum Cholestrol">
+                            <input class="form-control" type="text" name="chol" id="chol" placeholder="Serum Cholestrol" onkeypress="return onlyNumber(event)" required>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="fbs">Fasting Blood Sugar</label>
-                            <input class="form-control" type="text" name="fbs" id="fbs" placeholder="Fasting Blood Pressure">
+                            <input class="form-control" type="text" name="fbs" id="fbs" placeholder="Fasting Blood Pressure" onkeypress="return onlyNumber(event)" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="restecg">Resting ECG Results</label>
-                            <input class="form-control" type="text" name="restecg" id="restecg" placeholder="Resting ECG Results">
+                            <input class="form-control" type="text" name="restecg" id="restecg" placeholder="Resting ECG Results" onkeypress="return onlyNumber(event)" required>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="thalach">Maximum Heart Rate Achieved</label>
-                            <input class="form-control" type="text" name="thalach" id="thalach" placeholder="Maximum Heart Rate Achieved">
+                            <input class="form-control" type="text" name="thalach" id="thalach" placeholder="Maximum Heart Rate Achieved" onkeypress="return onlyNumber(event)" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="exang">Exercise Induced Angina</label>
-                            <input class="form-control" type="text" name="exang" id="exang" placeholder="Exercise Induced Angina">
+                            <input class="form-control" type="text" name="exang" id="exang" placeholder="Exercise Induced Angina" onkeypress="return onlyNumber(event)" required>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="oldpeak">ST Depression Induced By Exercise</label>
-                            <input class="form-control" type="text" name="oldpeak" id="oldpeak" placeholder="ST Depression Induced By Exercise">
+                            <input class="form-control" type="text" name="oldpeak" id="oldpeak" placeholder="ST Depression Induced By Exercise" onkeypress="return onlyNumber(event)" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="slope">Slope Of Peak Exercise</label>
-                            <input class="form-control" type="text" name="slope" id="slope" placeholder="Slope Of Peak Exercise">
+                            <input class="form-control" type="text" name="slope" id="slope" placeholder="Slope Of Peak Exercise" onkeypress="return onlyNumber(event)" required>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <label for="ca">Major Vessels Colored(Flouroscopy)</label>
-                            <input class="form-control" type="text" name="ca" id="ca" placeholder="Number Of Major Vessels Colored">
+                            <input class="form-control" type="text" name="ca" id="ca" placeholder="Number Of Major Vessels Colored" onkeypress="return onlyNumber(event)" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12 col-sm-6">
                             <label for="thal">Thalassemia</label>
-                            <select class="form-control" name="thal" id="thal">
+                            <select class="form-control" name="thal" id="thal" required>
                                 <option class="d-none" value="" selected disabled>Thalassemia</option>
                                 <option value="1">Normal</option>
                                 <option value="2">Fixed Defect</option>
@@ -103,6 +103,7 @@
                         </div>
                     </div>
                 </form>
+                <script src="/static/web/scripts/app.js"></script>
             </div>
         </div>
     </div>
