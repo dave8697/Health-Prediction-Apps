@@ -5,5 +5,10 @@ This repo is based on Machine Learning based apps hosted on django framework whi
 
 - Download the code on your local machine
 - cd to the project
-- Install the dependencies and run<br/>
+- You need to have anaconda installed on your system
+- create the conda environment with all the required files using
+```conda create --name <env> --file requirements.txt```
+- After creation of the environment, activate the environment by
+```conda activate <env>```
+- Run the code below to start the server
 ```python manage.py runserver```<br/>
