@@ -46,7 +46,7 @@
                         <label for="contact">Phone Number</label>
                         <input class="form-control mr-4" type="text" name="contact" id="contact"
                             placeholder="Enter your phone number" onfocus="this.placeholder=''"
-                            onblur="this.placeholder='Enter your phone number'" required>
+                            onblur="this.placeholder='Enter your phone number'" onkeypress="return onlyNumber(event)" maxlength="10" required>
                     </div>
                     <div class="form-group col">
                         <label for="dob">Select Country</label>
@@ -329,6 +329,7 @@
                     </div>
                 </div>
             </form>
+            <script src="/static/web/scripts/register_validate.js"></script>
         </div>
     </div>
 </div>
