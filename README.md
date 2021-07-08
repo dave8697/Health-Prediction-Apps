@@ -10,5 +10,5 @@ This repo is based on Machine Learning based apps hosted on django framework whi
 ```conda create --name <env> --file requirements.txt```
 - After creation of the environment, activate the environment by<br/>
 ```conda activate <env>```
-- Run the code below to start the server
+- Run the code below to start the server<br/>
 ```python manage.py runserver```<br/>
